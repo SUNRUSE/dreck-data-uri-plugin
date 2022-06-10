@@ -63,7 +63,7 @@ This plugin converts each file in the `DRECK_DATA_URI_INPUT_PATHS` Make variable
 
 ## Output
 
-This plugin writes an equivalent TypeScript file for each input file.  For example, if `DRECK_DATA_URI_INPUT_PATHS` contained `./example/file-path.txt`, `./plugins/data-uri/generated/a/b-c.txt.ts` would be written to disk, which would contain the equivalent:
+This plugin writes an equivalent TypeScript file for each input file.  For example, if `DRECK_DATA_URI_INPUT_PATHS` contained `./example/file-path.txt`, `./plugins/data-uri/generated/example/file-path.txt.ts` would be written to disk, which would contain the equivalent:
 
 ```typescript
 const dataUriExampleFilePathTxt: `data:text/plain;charset=utf-8,f2wGBEr154m8h7Bcokd1aQ==` = `data:text/plain;charset=utf-8,f2wGBEr154m8h7Bcokd1aQ==`;
